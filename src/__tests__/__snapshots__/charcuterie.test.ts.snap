@@ -1,0 +1,16 @@
+// Vitest Snapshot v1
+
+exports[`Charcuterie suite 1`] = `
+[
+  {
+    "calories": 100,
+    "name": "olives",
+    "type": 2,
+  },
+  {
+    "calories": 200,
+    "name": "salami",
+    "type": 1,
+  },
+]
+`;
