@@ -14,7 +14,7 @@ test('Charcuterie suite', () => {
   });
   const fruits = getItemsOfType(CharcuterieItemType.Fruit);
   fruits.forEach((value: CharcuterieItem) => {
-    expectTypeOf(value.type).toEqualTypeOf<CharcuterieItemType.Fruit>();
+    expectTypeOf(value.type).toEqualTypeOf(CharcuterieItemType.Fruit);
   })
   expect(getAllItems()).toMatchSnapshot();
-})
+});
