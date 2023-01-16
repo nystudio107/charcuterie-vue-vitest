@@ -1,20 +1,36 @@
 import {getAllItems, getItemsOfType, addCharcuterieItem, CharcuterieItemType} from '../js/charcuterie';
-import {test, expect, expectTypeOf} from 'vitest';
+import {it, expect, expectTypeOf, describe} from 'vitest';
 
-test('Charcuterie suite', () => {
-  addCharcuterieItem({
-    name: 'olives',
-    type: CharcuterieItemType.Fruit,
-    calories: 100
+describe("charcuterie.ts", () => {
+  it('should add items to the charcuterie board', () => {
+    addCharcuterieItem({
+      name: 'olives',
+      type: CharcuterieItemType.Fruit,
+      calories: 100
+    });
+    addCharcuterieItem({
+      name: 'salami',
+      type: CharcuterieItemType.Meat,
+      calories: 200
+    });
+    expect(getAllItems()).toMatchSnapshot();
   });
-  addCharcuterieItem({
-    name: 'salami',
-    type: CharcuterieItemType.Meat,
-    calories: 200
+
+  it ('should return the proper types of items', () => {
+    addCharcuterieItem({
+      name: 'olives',
+      type: CharcuterieItemType.Fruit,
+      calories: 100
+    });
+    addCharcuterieItem({
+      name: 'salami',
+      type: CharcuterieItemType.Meat,
+      calories: 200
+    });
+
+    const fruits = getItemsOfType(CharcuterieItemType.Fruit);
+    fruits.forEach((value: CharcuterieItem) => {
+      expectTypeOf(value.type).toEqualTypeOf(CharcuterieItemType.Fruit);
+    });
   });
-  const fruits = getItemsOfType(CharcuterieItemType.Fruit);
-  fruits.forEach((value: CharcuterieItem) => {
-    expectTypeOf(value.type).toEqualTypeOf(CharcuterieItemType.Fruit);
-  })
-  expect(getAllItems()).toMatchSnapshot();
 });

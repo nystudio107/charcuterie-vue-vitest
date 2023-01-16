@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Charcuterie suite 1`] = `
+exports[`charcuterie.ts > should add items to the charcuterie board 1`] = `
 [
   {
     "calories": 100,
