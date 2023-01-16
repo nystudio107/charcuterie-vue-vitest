@@ -1,4 +1,4 @@
-import {getAllItems, getItemsOfType, addCharcuterieItem, CharcuterieItemType} from '../index';
+import {getAllItems, getItemsOfType, addCharcuterieItem, CharcuterieItemType} from '../js/charcuterie';
 import {test, expect, expectTypeOf} from 'vitest';
 
 test('Charcuterie suite', () => {
