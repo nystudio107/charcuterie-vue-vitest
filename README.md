@@ -1,19 +1,25 @@
-# Vue 3 + TypeScript + Vite
+# Charcuterie Vue + Vitest example
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project uses [Vue 3](https://vuejs.org/), [Vite 4](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [TypeScript](https://www.typescriptlang.org/) to demonstrate test-driven development with Vitest.
 
-## Recommended IDE Setup
+# Requirements
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+This project has its devops shrink-wrapped with the project via Docker, and runs inside of a Docker container. You do not need `npm` or `node` installed.
 
-## Type Support For `.vue` Imports in TS
+You'll need only the following installed locally:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+# Commands
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-# charcuterie-vue-vitest
+To use this project, use the following `make` commands:
+
+* `make dev` - Run the development server via `npm run dev`
+* `make test` - Run tests via `npm run test`
+* `make test-coverage` - Run tests with coverage via `npm run test-coverage`
+* `make test-ui` - Run tests with the Vitest UI via `npm run test-ui`
+* `make build` - Perform a dist build via `npm run build`
+* `make npm xxx` - runs the `npm` command passed in, e.g.: `make npm install`
+* `make ssh` - Open a shell inside of the container
+* `make clean` - Remove node_modules/ & package-lock.json
+* `make image-build` - Build the Docker image & run `npm install`
