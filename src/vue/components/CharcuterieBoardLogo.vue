@@ -3,8 +3,15 @@
 
 <template>
   <div>
-    <a href="https://www.webstaurantstore.com/blog/2318/what-is-charcuterie.html" target="_blank">
-      <img src="../../assets/charcuterie-board-logo.svg" class="logo" alt="Charcuterie Board Logo" />
+    <a
+      href="https://www.webstaurantstore.com/blog/2318/what-is-charcuterie.html"
+      target="_blank"
+    >
+      <img
+        src="../../assets/charcuterie-board-logo.svg"
+        class="logo"
+        alt="Charcuterie Board Logo"
+      >
     </a>
   </div>
 </template>
