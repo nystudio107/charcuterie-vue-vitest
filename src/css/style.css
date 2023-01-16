@@ -3,15 +3,12 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgba(97, 65, 16, 0.67);
-
+  color: rgba(255 255 255 / 87%);
+  background-color: rgba(97 65 16 / 67%);
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -43,4 +40,3 @@ h1 {
   padding: 2rem;
   text-align: center;
 }
-
