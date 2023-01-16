@@ -5,12 +5,13 @@ IMAGE_INFO=$(shell docker image inspect $(CONTAINER):$(TAG))
 DOCKER_RUN=docker container run \
 	--name ${CONTAINER} \
 	--rm \
-	-p 3001:3001 \
+	-p 3000:3000 \
+	-p 51204:51204 \
 	-it \
 	-v `pwd`:/app \
 	${CONTAINER}:${TAG}
 
-.PHONY: build clean dev image-build image-check ssh test test-coverage npm
+.PHONY: build clean dev image-build image-check ssh npm test test-coverage
 
 # Perform a dist build
 build: image-check
@@ -46,6 +47,14 @@ image-check:
 ifeq ($(IMAGE_INFO), [])
 image-check: image-build
 endif
+# Run the passed in npm command
+npm: image-check
+ifeq ($(CONTAINER_ID),)
+	${DOCKER_RUN} \
+		$(filter-out $@,$(MAKECMDGOALS)) $(MAKEFLAGS)
+else
+	docker exec -it $(CONTAINER) npm $(filter-out $@,$(MAKECMDGOALS)) $(MAKEFLAGS)
+endif
 # ssh into the already running container
 ssh:
 	docker exec -it $(CONTAINER) /bin/sh
@@ -65,13 +74,13 @@ ifeq ($(CONTAINER_ID),)
 else
 	docker exec -it $(CONTAINER) npm run test-coverage
 endif
-# Run the passed in npm command
-npm: image-check
+# Run tests with the Vitest UI
+test-ui: image-check
 ifeq ($(CONTAINER_ID),)
 	${DOCKER_RUN} \
-		$(filter-out $@,$(MAKECMDGOALS)) $(MAKEFLAGS)
+		run test-ui
 else
-	docker exec -it $(CONTAINER) npm $(filter-out $@,$(MAKECMDGOALS)) $(MAKEFLAGS)
+	docker exec -it $(CONTAINER) npm run test-ui
 endif
 %:
 	@:
