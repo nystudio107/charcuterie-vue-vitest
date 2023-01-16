@@ -10,13 +10,16 @@ describe("CharcuterieBoardLogo.vue", () => {
     const a = wrapper.find('a');
 
     expect(a.exists()).toBe(true);
+    expect(a.attributes('href')).toBeDefined();
   });
 
-  it("<img> tag should exist", () => {
+  it("<img> tag should exist inside an <a> tag", () => {
     const wrapper = mount(CharcuterieBoardLogo, {
     });
-    const img = wrapper.find('img');
+    const a = wrapper.find('a');
+    const img = a.find('img');
 
     expect(img.exists()).toBe(true);
+    expect(img.attributes('src')).toBeDefined();
   });
 });
