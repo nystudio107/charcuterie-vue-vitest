@@ -4,7 +4,7 @@ import {describe, it, expect} from "vitest";
 
 describe("CharcuterieBoardLogo.vue", () => {
 
-  it("<a> tag should exist", () => {
+  it("should have an <a> tag", () => {
     const wrapper = mount(CharcuterieBoardLogo, {
     });
     const a = wrapper.find('a');
@@ -13,7 +13,7 @@ describe("CharcuterieBoardLogo.vue", () => {
     expect(a.attributes('href')).toBeDefined();
   });
 
-  it("<img> tag should exist inside an <a> tag", () => {
+  it("should have an <img> tag inside an <a> tag", () => {
     const wrapper = mount(CharcuterieBoardLogo, {
     });
     const a = wrapper.find('a');
