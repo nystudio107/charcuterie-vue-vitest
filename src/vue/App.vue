@@ -7,6 +7,3 @@ import CharcuterieBoardLogo from './components/CharcuterieBoardLogo.vue'
     <CharcuterieBoardLogo />
   </div>
 </template>
-
-<style scoped>
-</style>
