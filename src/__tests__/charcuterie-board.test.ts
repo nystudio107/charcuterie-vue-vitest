@@ -1,9 +1,9 @@
-import {CharcuterieItemType} from "../@types/charcuterie-enums";
+import {CharcuterieItemType} from '../@types/charcuterie-enums';
 import {clearAllItems, getAllItems, getItemsOfType, addItem} from '../js/charcuterie-board';
-import {getInventoryItem} from "../js/charcuterie-inventory";
+import {getInventoryItem} from '../js/charcuterie-inventory';
 import {it, expect, describe} from 'vitest';
 
-describe("charcuterie-board.ts", () => {
+describe('charcuterie-board.ts', () => {
   it('should add items to the charcuterie board', () => {
     clearAllItems();
     addItem(getInventoryItem('olives'));

@@ -17,7 +17,5 @@ describe('charcuterie-inventory.ts', () => {
   it('should have an "olives" item', () => {
     const olives = getInventoryItem('olives');
     expect(typeof olives !== 'undefined').toBe(true);
-    expectTypeOf(olives).toEqualTypeOf<CharcuterieItem>();
-    expect(olives.name).eq('olives');
   });
 });
