@@ -1,8 +1,4 @@
-export enum CharcuterieItemType {
-  Cheese,
-  Meat,
-  Fruit,
-}
+import {CharcuterieItemType} from "../@types/charcuterie-enums.d.ts";
 
 const charcuterieBoard: CharcuterieItem[] = [];
 
@@ -11,7 +7,7 @@ export function getAllItems() {
 }
 
 export function getItemsOfType(type: CharcuterieItemType) {
-  return charcuterieBoard.filter((value:CharcuterieItem) => value.type === type)
+  return charcuterieBoard.filter((value: CharcuterieItem) => value.type === type)
 }
 
 export function addCharcuterieItem(item: CharcuterieItem) {

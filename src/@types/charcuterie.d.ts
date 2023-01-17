@@ -1,4 +1,3 @@
-
 interface CharcuterieItem {
     name: string;
     type: CharcuterieItemType;
