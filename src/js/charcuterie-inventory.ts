@@ -1,4 +1,4 @@
-import {CharcuterieItemType} from "../@types/charcuterie-enums.d.ts";
+import {CharcuterieItemType} from "../@types/charcuterie-enums";
 
 const charcuterieInventory: CharcuterieItem[]  = [
   {
@@ -17,6 +17,6 @@ export function getAllItems() {
   return charcuterieInventory;
 }
 
-export function getInventoryItem(name: string): CharcuterieItem {
+export function getInventoryItem(name: string): CharcuterieItem|undefined {
   return charcuterieInventory.find((value: CharcuterieItem) => value.name === name);
 }
