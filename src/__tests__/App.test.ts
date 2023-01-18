@@ -1,6 +1,7 @@
-import {mount} from "@vue/test-utils";
-import {describe, it, expect} from "vitest";
-import App from "@/vue/App.vue";
+import {mount} from '@vue/test-utils';
+import {describe, it, expect} from 'vitest';
+import {kebabCase} from "@/js/utils";
+import App from '@/vue/App.vue';
 
 describe('App.vu', () => {
   it('should have <div> element with the "row" class', () => {
@@ -44,8 +45,3 @@ describe('App.vu', () => {
     });
   });
 });
-
-const kebabCase = (string: string) => string
-  .replace(/([a-z])([A-Z])/g, "$1-$2")
-  .replace(/[\s_]+/g, '-')
-  .toLowerCase();
