@@ -1,21 +1,8 @@
 <script setup lang="ts">
-defineProps<{
-  item: CharcuterieItem,
-}>();
 </script>
 
 <template>
-  <div class="box">
-    <div :class="['wrapper', item.type]">
-      <img
-        :src="`../../src/assets/${item.type}.svg`"
-        class="icon"
-        :alt="`${item.name}`"
-        :title="`${item.type}`"
-      >
-      <span class="name">{{ item.name }}</span>
-    </div>
-  </div>
+  <div />
 </template>
 
 <style scoped>

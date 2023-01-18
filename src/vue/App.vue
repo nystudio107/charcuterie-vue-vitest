@@ -5,19 +5,7 @@ import CharcuterieInventory from './components/CharcuterieInventory.vue'
 </script>
 
 <template>
-  <div>
-    <CharcuterieBoardLogo />
-    <div class="row">
-      <div class="column">
-        <h1>Charcuterie Board</h1>
-        <CharcuterieBoard />
-      </div>
-      <div class="column">
-        <h1>Inventory</h1>
-        <CharcuterieInventory />
-      </div>
-    </div>
-  </div>
+  <div />
 </template>
 
 <style scoped>
