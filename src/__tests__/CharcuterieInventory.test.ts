@@ -3,7 +3,7 @@ import {describe, it, expect} from "vitest";
 import CharcuterieInventory from "@/vue/components/CharcuterieInventory.vue";
 import {kebabCase} from "@/js/utils";
 
-describe('App.vu', () => {
+describe('CharcuterieInventory.vue', () => {
   it('should have <div> element with the "inventory" class', () => {
     const wrapper = mount(CharcuterieInventory, {
     });

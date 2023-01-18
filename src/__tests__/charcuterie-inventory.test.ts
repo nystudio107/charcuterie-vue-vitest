@@ -1,14 +1,14 @@
 import {it, expect, expectTypeOf, describe} from 'vitest';
-import {getAllItems, getInventoryItem} from '@/js/charcuterie-inventory';
+import {getInventory, getInventoryItem} from '@/js/charcuterie-inventory';
 
 describe('charcuterie-inventory.ts', () => {
   it('should return some inventory items', () => {
-    const items = getAllItems();
+    const items = getInventory();
     expect(items.length).greaterThan(0);
   });
 
   it('should return an array of nothing but CharcuterieItems', () => {
-    const items = getAllItems();
+    const items = getInventory();
     items.forEach((item: CharcuterieItem) => {
       expectTypeOf(item).toEqualTypeOf<CharcuterieItem>();
     })

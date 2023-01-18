@@ -3,7 +3,7 @@ import {describe, it, expect} from 'vitest';
 import {kebabCase} from "@/js/utils";
 import App from '@/vue/App.vue';
 
-describe('App.vu', () => {
+describe('App.vue', () => {
   it('should have <div> element with the "row" class', () => {
     const wrapper = mount(App, {
     });

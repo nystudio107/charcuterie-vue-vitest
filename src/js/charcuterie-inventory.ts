@@ -13,7 +13,7 @@ const charcuterieInventory: CharcuterieItem[]  = [
   }
 ];
 
-export function getAllItems() {
+export function getInventory() {
   return charcuterieInventory;
 }
 

@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import {getAllItems } from '@/js/charcuterie-inventory';
+import {getInventory} from '@/js/charcuterie-inventory';
 import CharcuterieItem from './CharcuterieItem.vue';
 
-const items = getAllItems();
+const inventory = getInventory();
 </script>
 
 <template>
   <div class="inventory">
     <CharcuterieItem
-      v-for="item in items"
+      v-for="item in inventory"
       :key="item.name"
       :item="item"
     >
