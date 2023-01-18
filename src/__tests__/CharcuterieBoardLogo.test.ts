@@ -1,6 +1,6 @@
 import {mount} from '@vue/test-utils';
-import CharcuterieBoardLogo from '../vue/components/CharcuterieBoardLogo.vue';
 import {describe, it, expect} from 'vitest';
+import CharcuterieBoardLogo from '@/vue/components/CharcuterieBoardLogo.vue';
 
 describe('CharcuterieBoardLogo.vue', () => {
 
@@ -13,11 +13,11 @@ describe('CharcuterieBoardLogo.vue', () => {
     expect(a.attributes('href')).toBeDefined();
   });
 
-  it('should have an <img> tag inside an <a> tag', () => {
+  it('should have an <img> tag with the class "logo" & `src` attribute set inside an <a> tag', () => {
     const wrapper = mount(CharcuterieBoardLogo, {
     });
     const a = wrapper.find('a');
-    const img = a.find('img');
+    const img = a.find('img.logo');
 
     expect(img.exists()).toBe(true);
     expect(img.attributes('src')).toBeDefined();

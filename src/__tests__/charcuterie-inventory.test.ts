@@ -1,5 +1,5 @@
-import {getAllItems, getInventoryItem} from '../js/charcuterie-inventory';
 import {it, expect, expectTypeOf, describe} from 'vitest';
+import {getAllItems, getInventoryItem} from '@/js/charcuterie-inventory';
 
 describe('charcuterie-inventory.ts', () => {
   it('should return some inventory items', () => {

@@ -1,23 +1,23 @@
 import {mount} from "@vue/test-utils";
-import App from "../vue/App.vue";
 import {describe, it, expect} from "vitest";
+import App from "@/vue/App.vue";
 
-describe("App.vue", () => {
-  it("should have <div> element with the 'row' class", () => {
+describe('App.vu', () => {
+  it('should have <div> element with the "row" class', () => {
     const wrapper = mount(App, {
     });
     const columns = wrapper.findAll('div.row');
     expect(columns.length).toBe(1);
   });
 
-  it("should have <div> elements with the 'column' class", () => {
+  it('should have <div> elements with the "column" class', () => {
     const wrapper = mount(App, {
     });
     const columns = wrapper.findAll('div.column');
     expect(columns.length).toBe(2);
   });
 
-  it("the first column should have a <h1> with the title 'Charcuterie Board'", () => {
+  it('the first column should have a <h1> with the title "Charcuterie Board"', () => {
     const wrapper = mount(App, {
     });
     const columns = wrapper.findAll('div.column');
@@ -25,7 +25,7 @@ describe("App.vue", () => {
     expect(header.text()).toBe('Charcuterie Board');
   });
 
-  it("the second column should have a <h1> with the title 'Inventory'", () => {
+  it('the second column should have a <h1> with the title "Inventory"', () => {
     const wrapper = mount(App, {
     });
     const columns = wrapper.findAll('div.column');
@@ -33,7 +33,7 @@ describe("App.vue", () => {
     expect(header.text()).toBe('Inventory');
   });
 
-  it("should have the following components: <CharcuterieBoardLogo>, <CharcuterieBoard> & <CharcuterieInventory>", () => {
+  it('should have the following components: <CharcuterieBoardLogo>, <CharcuterieBoard> & <CharcuterieInventory>', () => {
     const wrapper = mount(App, {
       shallow: true
     });
@@ -45,7 +45,7 @@ describe("App.vue", () => {
   });
 });
 
-const kebabCase = string => string
+const kebabCase = (string: string) => string
   .replace(/([a-z])([A-Z])/g, "$1-$2")
   .replace(/[\s_]+/g, '-')
   .toLowerCase();
