@@ -1,5 +1,6 @@
 export enum CharcuterieItemType {
-    Cheese,
-    Meat,
-    Fruit,
+    Cheese = "cheese",
+    Meat = "meat",
+    Fruit = "fruit",
+    Vegetable = "vegetable",
 }
