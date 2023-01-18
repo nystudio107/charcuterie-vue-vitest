@@ -5,12 +5,12 @@ exports[`charcuterie-board.ts > should add items to the charcuterie board 1`] = 
   {
     "calories": 100,
     "name": "olives",
-    "type": 2,
+    "type": "fruit",
   },
   {
     "calories": 200,
     "name": "salami",
-    "type": 1,
+    "type": "meat",
   },
 ]
 `;
