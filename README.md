@@ -2,6 +2,8 @@
 
 This project uses [Vue 3](https://vuejs.org/), [Vite 4](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [TypeScript](https://www.typescriptlang.org/) to demonstrate test-driven development with Vitest.
 
+The [`no-code-just-tests`](https://github.com/nystudio107/charcuterie-vue-vitest/tree/no-code-just-tests) branch has just the tests, so you can use TDD to write the code that satisfies them.
+
 # Requirements
 
 This project has its devops shrink-wrapped with the project via Docker, and runs inside of a Docker container. You do not need `npm` or `node` installed.
@@ -23,3 +25,5 @@ To use this project, use the following `make` commands:
 * `make ssh` - Open a shell inside of the container
 * `make clean` - Remove node_modules/ & package-lock.json
 * `make image-build` - Build the Docker image & run `npm install`
+
+Each command runs in a separate container, so you can use as many of them simultaneously as you want.
