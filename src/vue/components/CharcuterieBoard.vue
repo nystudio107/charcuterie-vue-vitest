@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref, toRefs} from 'vue';
+import {ref} from 'vue';
 import {getInventory} from '@/js/charcuterie-inventory';
 
 import CharcuterieItem from './CharcuterieItem.vue';
