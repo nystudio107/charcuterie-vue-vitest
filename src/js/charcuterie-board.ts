@@ -1,4 +1,4 @@
-import {CharcuterieItemType} from '../@types/charcuterie-enums';
+import {CharcuterieItemType} from '@/@types/charcuterie-enums';
 
 const charcuterieBoard: CharcuterieItem[] = [];
 
