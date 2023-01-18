@@ -1,13 +1,22 @@
 /// <reference types="vitest/config" />
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import eslint from 'vite-plugin-eslint'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import eslint from 'vite-plugin-eslint';
 import stylelint from 'vite-plugin-stylelint';
 import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),eslint(),stylelint()],
+  plugins: [
+    vue(),
+    eslint({
+      fix: true,
+    }),
+    stylelint({
+      fix: true,
+      lintInWorker: true
+    })
+  ],
   server: {
     host: '0.0.0.0',
     origin: 'http://localhost:3000',
