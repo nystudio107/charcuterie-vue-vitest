@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import {getAllItems } from '@/js/charcuterie-inventory';
 import CharcuterieItem from './CharcuterieItem.vue';
 
-const items = ref(getAllItems());
+const items = getAllItems();
 </script>
 
 <template>
