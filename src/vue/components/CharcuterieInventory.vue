@@ -16,6 +16,3 @@ const inventory = getInventory();
     </CharcuterieItem>
   </div>
 </template>
-
-<style scoped>
-</style>

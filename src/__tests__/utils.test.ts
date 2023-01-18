@@ -1,4 +1,4 @@
-import {it, expect, expectTypeOf, describe} from 'vitest';
+import {it, expect, describe} from 'vitest';
 import {kebabCase} from "@/js/utils";
 
 describe('utils.ts', () => {
