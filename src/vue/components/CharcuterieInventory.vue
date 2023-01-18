@@ -6,7 +6,7 @@ const items = getAllItems();
 </script>
 
 <template>
-  <div>
+  <div class="inventory">
     <CharcuterieItem
       v-for="item in items"
       :key="item.name"
