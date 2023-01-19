@@ -1,0 +1,146 @@
+// Vitest Snapshot v1
+
+exports[`charcuterie-inventory.ts > should have all of the items from our spec 1`] = `
+[
+  {
+    "name": "graham",
+    "type": "cracker",
+  },
+  {
+    "name": "cream",
+    "type": "cracker",
+  },
+  {
+    "name": "matzo",
+    "type": "cracker",
+  },
+  {
+    "name": "graham",
+    "type": "cracker",
+  },
+  {
+    "name": "oatcake",
+    "type": "cracker",
+  },
+  {
+    "name": "rice",
+    "type": "cracker",
+  },
+  {
+    "name": "salami",
+    "type": "meat",
+  },
+  {
+    "name": "soppressata",
+    "type": "meat",
+  },
+  {
+    "name": "calabrese",
+    "type": "meat",
+  },
+  {
+    "name": "mortadella",
+    "type": "meat",
+  },
+  {
+    "name": "prosciutto",
+    "type": "meat",
+  },
+  {
+    "name": "chorizo",
+    "type": "meat",
+  },
+  {
+    "name": "capicola",
+    "type": "meat",
+  },
+  {
+    "name": "cheddar",
+    "type": "cheese",
+  },
+  {
+    "name": "roquefort",
+    "type": "cheese",
+  },
+  {
+    "name": "swiss",
+    "type": "cheese",
+  },
+  {
+    "name": "pecorino-romano",
+    "type": "cheese",
+  },
+  {
+    "name": "parmigiano-reggiano",
+    "type": "cheese",
+  },
+  {
+    "name": "gruyere",
+    "type": "cheese",
+  },
+  {
+    "name": "provolone",
+    "type": "cheese",
+  },
+  {
+    "name": "peanuts",
+    "type": "nut",
+  },
+  {
+    "name": "almond",
+    "type": "nut",
+  },
+  {
+    "name": "cashew",
+    "type": "nut",
+  },
+  {
+    "name": "walnut",
+    "type": "nut",
+  },
+  {
+    "name": "brazil",
+    "type": "nut",
+  },
+  {
+    "name": "pistachio",
+    "type": "nut",
+  },
+  {
+    "name": "peanuts",
+    "type": "nut",
+  },
+  {
+    "name": "apple",
+    "type": "fruit",
+  },
+  {
+    "name": "olives",
+    "type": "fruit",
+  },
+  {
+    "name": "strawberry",
+    "type": "fruit",
+  },
+  {
+    "name": "cherry",
+    "type": "fruit",
+  },
+  {
+    "name": "blackberry",
+    "type": "fruit",
+  },
+  {
+    "name": "raspberry",
+    "type": "fruit",
+  },
+  {
+    "name": "pear",
+    "type": "fruit",
+  },
+  {
+    "name": "carrot",
+    "type": "vegetable",
+  },
+]
+`;
