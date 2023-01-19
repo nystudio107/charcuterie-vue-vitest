@@ -14,7 +14,7 @@ You'll need only the following installed locally:
 
 # Commands
 
-To use this project, use the following `make` commands:
+To use this project, use the following `make` commands from the project root:
 
 * `make dev` - Run the development server via `npm run dev`
 * `make test` - Run tests via `npm run test`
@@ -25,5 +25,7 @@ To use this project, use the following `make` commands:
 * `make ssh` - Open a shell inside of the container
 * `make clean` - Remove node_modules/ & package-lock.json
 * `make image-build` - Build the Docker image & run `npm install`
+
+Port `3000` needs to be available to run the Vite dev server, and port `51204` needs to be available to run the Vitest UI.
 
 Each command runs in a separate container, so you can use as many of them simultaneously as you want.
