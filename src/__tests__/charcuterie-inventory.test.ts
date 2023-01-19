@@ -18,4 +18,9 @@ describe('charcuterie-inventory.ts', () => {
     const olives = getInventoryItem('olives');
     expect(typeof olives !== 'undefined').toBe(true);
   });
+
+  it('should have all of the items from our spec', () => {
+    const inventory = getInventory();
+    expect(inventory).toMatchSnapshot();
+  });
 });
