@@ -4,7 +4,7 @@ IMAGE_INFO=$(shell docker image inspect $(CONTAINER):$(TAG))
 IMAGE_NAME=${CONTAINER}:${TAG}
 DOCKER_RUN=docker container run --rm -it -v `pwd`:/app
 
-.PHONY: build clean dev image-build image-check npm ssh test test-coverage
+.PHONY: build clean dev image-build image-check npm ssh test test-coverage test-ui
 
 # Perform a dist build via npm run build
 build: image-check
