@@ -1,5 +1,7 @@
 # Charcuterie Vue + Vitest example
 
+This is the git repo for the project used in the [Test-Driven Development with Vitest](https://craftquest.io/courses/test-driven-development-with-vitest) course on [CraftQuest.io](https://craftquest.io/). The full live stream is here: [CraftQuest on Call 58: TDD with Vitest](https://craftquest.io/livestreams/craftquest-on-call-58-tdd-with-vitest)
+
 This project uses [Vue 3](https://vuejs.org/), [Vite 4](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [TypeScript](https://www.typescriptlang.org/) to demonstrate test-driven development with Vitest.
 
 The [`no-code-just-tests`](https://github.com/nystudio107/charcuterie-vue-vitest/tree/no-code-just-tests) branch has just the tests, so you can use TDD to write the code that satisfies them.
