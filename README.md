@@ -14,6 +14,16 @@ You'll need only the following installed locally:
 
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
+# Run it in a browser in Github Codespaces
+
+1. In [Github](https://github.com/nystudio107/charcuterie-vue-vitest), click on **Use this template** and select **Open in a codespace**
+2. In the resulting Terminal window, type `make dev` to start the project up
+3. Click on the **Open in a Browser** button that appears at the bottom-right
+
+This lets anyone use the project without having to do _any_ local setup.
+
+You can use the Codespaces editor to edit files, run tests, or load the site frontend, all from within a browser!
+
 # Commands
 
 To use this project, use the following `make` commands from the project root:
